@@ -57,6 +57,28 @@ app.post('/users/', (request, response) => {
     response.status(200).send('Utente aggiunto al database.')
 })
 
+app.put('/users/:id', (request, response) => {
+    const token = request.header("Authorization");
+    if (!token) return response.sendStatus(401);
+
+    if(!request.params.id) {
+        response.status(500).send('User ID non specificato');
+    }
+
+    response.status(200).send('Utente modificato.')
+})
+
+app.delete('/usres/:id', (request, response) => {
+    const token = request.header("Authorization");
+    if (!token) return response.sendStatus(401);
+
+    if(!request.params.id) {
+        response.status(500).send('User ID non specificato');
+    }
+
+    response.status(200).send('Utente eliminato.')
+})
+
 
 const server = app.listen(3000, () => {
     console.log('server avviato...');
