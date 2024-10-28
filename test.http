@@ -1,0 +1,32 @@
+get https://paranormal-incantation-956vr47qrwjh79g4-3000.app.github.dev/
+
+###
+
+get https://paranormal-incantation-956vr47qrwjh79g4-3000.app.github.dev/usr
+
+###
+
+get https://paranormal-incantation-956vr47qrwjh79g4-3000.app.github.dev/users
+
+###
+
+get https://paranormal-incantation-956vr47qrwjh79g4-3000.app.github.dev/users/1
+
+###
+
+get https://paranormal-incantation-956vr47qrwjh79g4-3000.app.github.dev/users/5
+
+###
+
+post https://paranormal-incantation-956vr47qrwjh79g4-3000.app.github.dev/users
+
+###
+
+post https://paranormal-incantation-956vr47qrwjh79g4-3000.app.github.dev/users
+Authorization: 123
+
+{
+    id: 4,
+    nome: 'Giuseppe',
+    cognome: 'Neri'
+}
